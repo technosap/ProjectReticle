@@ -57,3 +57,23 @@ After Reticle has been successfully built and linked to, start writing some simp
  -  Before creating any Reticle objects, or calling any functions, call RetiRenderer::setReticleRootDiretory() with a string path to the directory named Reticle with the Sources, Headers, etc subdirectories. This may iether be an absolute path, or a path relative to the cwd at call time. This string may be formatted according to OS specifications.
  -  Then call RetiRenderer::init().
  -  Write the applicaion code. Refer to the (upcoming) manual.
+ 
+ ## Dependencies Install Instruction (UBUNTU): 
+ 
+ -  **OpenGL:**
+ ```
+ sudo apt-get install mesa-common-dev mesa-utils
+ glxinfo | grep OpenGL
+ ```
+ -  **GLEW:** 
+ ```
+ sudo apt-get install libglew-dev libglew-dbg libglew1.13
+ ```
+ -  **GLFW:** 
+ ```
+ sudo apt-get install libglfw3-dev
+ ```
+ -  **assimp:**
+ ```
+ sudo apt-get install assimp-utils libassimp-dev libassimp3v5
+ ```
